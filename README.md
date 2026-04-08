@@ -30,6 +30,26 @@ Example output:
 - **DrugBank feature engineering** for graph, CYP, severity, and similarity-based features
 - **EDA and testing workflows** for analysis and presentation support
 
+## Data Sources and Credits
+
+This project uses data, derived features, and supporting references from the following biomedical resources:
+
+- **DrugBank** — used for drug records, drug-drug interaction data, enzyme-related features, and DrugBank-based feature engineering workflows.
+- **ChEMBL** — used for bioactive compound and mechanism-related modeling support.
+- **SIDER** — used for side effect and adverse reaction reference information.
+- **STITCH** — used as a supporting resource for chemical/protein interaction context.
+
+We gratefully acknowledge the teams and institutions that maintain these databases and make them available for research and education.
+
+This repository is part of an academic project. Some raw datasets may not be redistributed here because of size, licensing, or access restrictions. Where needed, this repository includes processed outputs and project notebooks built from approved academic use of these resources.
+
+## References
+
+- Knox C, Wilson M, Klinger CM, et al. *DrugBank 6.0: the DrugBank Knowledgebase for 2024.* Nucleic Acids Research. 2024;52(D1):D1265-D1275. doi:10.1093/nar/gkad976.
+- Zdrazil B, Felix E, Hunter F, et al. *The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods.* Nucleic Acids Research. 2024;52(D1):D1180-D1192. doi:10.1093/nar/gkad1004.
+- Kuhn M, Letunic I, Jensen LJ, Bork P. *The SIDER database of drugs and side effects.* Nucleic Acids Research. 2016;44(D1):D1075-D1079. doi:10.1093/nar/gkv1075.
+- Szklarczyk D, Santos A, von Mering C, Jensen LJ, Bork P, Kuhn M. *STITCH 5: augmenting protein-chemical interaction networks with tissue and affinity data.* Nucleic Acids Research. 2016;44(D1):D380-D384. doi:10.1093/nar/gkv1277.
+
 ## Repository Structure
 ```text
 compoundiq/
@@ -59,22 +79,3 @@ compoundiq/
         ├── triplet_val.parquet
         └── triplet_test.parquet
 
-## Data Sources and Credits
-
-This project uses data, derived features, and supporting references from the following biomedical resources:
-
-- **DrugBank** — used for drug records, drug-drug interaction data, enzyme-related features, and DrugBank-based feature engineering workflows.
-- **ChEMBL** — used for bioactive compound and mechanism-related modeling support.
-- **SIDER** — used for side effect and adverse reaction reference information.
-- **STITCH** — used as a supporting resource for chemical/protein interaction context.
-
-We gratefully acknowledge the teams and institutions that maintain these databases and make them available for research and education.
-
-This repository is part of an academic project. Some raw datasets may not be redistributed here because of size, licensing, or access restrictions. Where needed, this repository includes processed outputs and project notebooks built from approved academic use of these resources.
-
-## References
-
-- Knox C, Wilson M, Klinger CM, et al. *DrugBank 6.0: the DrugBank Knowledgebase for 2024.* Nucleic Acids Research. 2024;52(D1):D1265-D1275. doi:10.1093/nar/gkad976.
-- Zdrazil B, Felix E, Hunter F, et al. *The ChEMBL Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods.* Nucleic Acids Research. 2024;52(D1):D1180-D1192. doi:10.1093/nar/gkad1004.
-- Kuhn M, Letunic I, Jensen LJ, Bork P. *The SIDER database of drugs and side effects.* Nucleic Acids Research. 2016;44(D1):D1075-D1079. doi:10.1093/nar/gkv1075.
-- Szklarczyk D, Santos A, von Mering C, Jensen LJ, Bork P, Kuhn M. *STITCH 5: augmenting protein-chemical interaction networks with tissue and affinity data.* Nucleic Acids Research. 2016;44(D1):D380-D384. doi:10.1093/nar/gkv1277.
