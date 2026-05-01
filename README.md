@@ -70,7 +70,9 @@ compoundiq/
 │       └── task7_eda.ipynb
 ├── docs/
 │   ├── proposal/
-│   │   └── compoundiq_project_proposal.pdf
+│   │   └── CompoundIQ_Final_Presentation_ITAI2277.pdf
+│   ├── presentation/
+│   │   └── compoundiq_final_presentation.pdf
 │   ├── testing/
 │   │   └── compoundiq_testing_questions.docx
 │   └── training_curves.png
