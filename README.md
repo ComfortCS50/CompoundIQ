@@ -48,31 +48,42 @@ Full academic references are provided in [CITATIONS.md](CITATIONS.md).
 
 
 ## Repository Structure
+The repository is organized by project component. The `notebooks/` folder contains the main development notebooks for DrugBank preprocessing, BioBERT testing, molecular generation, GNN modeling, and EDA. The `docs/` folder contains project documentation, testing questions, proposal materials, and result images. The `data/processed/` folder contains the cleaned and processed datasets used by the models.
 ```text
 compoundiq/
 ├── README.md
+├── CITATIONS.md
 ├── notebooks/
 │   ├── drugbank/
 │   │   └── drugbank_feature_engineering_clean_final.ipynb
 │   ├── biobert/
-│   │   └── biobert_testing.ipynb
+│   │   ├── biobert_testing.ipynb
+│   │   └── biobert_enhanced.ipynb
 │   ├── vae/
 │   │   └── compoundiq_vae.ipynb
 │   ├── gnn/
 │   │   ├── task6_gnn_architecture.ipynb
-│   │   └── task6_threeway_gnn.ipynb
+│   │   ├── task6_threeway_gnn.ipynb
+│   │   └── threeway_gnn_fixed.ipynb
 │   └── eda/
+│       ├── eda_real_data.ipynb
 │       └── task7_eda.ipynb
 ├── docs/
-│   ├── compoundiq_project_proposal.pdf
-│   └── compoundiq_testing_questions.docx
+│   ├── proposal/
+│   │   └── compoundiq_project_proposal.pdf
+│   ├── testing/
+│   │   └── compoundiq_testing_questions.docx
+│   └── training_curves.png
 └── data/
     └── processed/
+        ├── chembl_processed_full.parquet
         ├── drugbank_processed_enhanced.parquet
+        ├── sider_detailed.parquet
+        ├── stitch_detailed.parquet
+        ├── stitch_features.parquet
         ├── train_features.parquet
         ├── val_features.parquet
         ├── test_features.parquet
         ├── triplet_train.parquet
         ├── triplet_val.parquet
         └── triplet_test.parquet
-
