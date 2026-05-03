@@ -46,6 +46,13 @@ This repository is part of an academic project. Some raw datasets may not be red
 
 Full academic references are provided in [CITATIONS.md](CITATIONS.md).
 
+## Data Availability
+
+The full processed datasets are not included in this repository because some source datasets are large and/or have redistribution restrictions.
+
+This project used data from ChEMBL, DrugBank, SIDER, and STITCH. The notebooks in this repository show the preprocessing, feature engineering, model development, and evaluation workflow. Full processed files such as DrugBank-derived feature tables, train/validation/test feature splits, and triplet training datasets were used during development but are not redistributed in this public repository.
+
+To reproduce the full processed datasets, users should obtain access to the original data sources and run the preprocessing notebooks in `notebooks/`.
 
 ## Repository Structure
 The repository is organized by project component. The `notebooks/` folder contains the main development notebooks for DrugBank preprocessing, BioBERT testing, molecular generation, GNN modeling, and EDA. The `docs/` folder contains project documentation, testing questions, proposal materials, and result images. The `data/processed/` folder contains the cleaned and processed datasets used by the models.
@@ -77,15 +84,9 @@ compoundiq/
 │   │   └── compoundiq_testing_questions.docx
 │   └── training_curves.png
 └── data/
+│   ├──README.md
     └── processed/
         ├── chembl_processed_full.parquet
-        ├── drugbank_processed_enhanced.parquet
         ├── sider_detailed.parquet
         ├── stitch_detailed.parquet
-        ├── stitch_features.parquet
-        ├── train_features.parquet
-        ├── val_features.parquet
-        ├── test_features.parquet
-        ├── triplet_train.parquet
-        ├── triplet_val.parquet
-        └── triplet_test.parquet
+        └── stitch_features.parquet
